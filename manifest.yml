@@ -1,6 +1,10 @@
 ---
 applications:
-- name: proxy-test
+- name: slc
   memory: 256M
   instances: 1
+  buildpack: java_buildpack
+  host: slc
   path: target/proxy-test-0.0.1-SNAPSHOT.war
+  env:
+   SAP_SCC_VIRTUAL_HOSTS: '["https://b1poc:443"]'
