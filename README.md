@@ -20,3 +20,13 @@ Spring Cloud已经创建了一个嵌入式Zuul代理，以简化UI应用程序�
 - 协助单点压测
 - 限流
 - 静态响应
+
+
+
+## Add a filter
+Now let’s see how we can filter requests through our proxy service. Zuul has four standard filter types:
+
+- pre filters are executed before the request is routed,
+- route filters can handle the actual routing of the request,
+- post filters are executed after the request has been routed, and
+- error filters execute if an error occurs in the course of handling the request.
